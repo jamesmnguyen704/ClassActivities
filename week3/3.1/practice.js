@@ -1,10 +1,4 @@
-function myNumberFunction() {
-  let num = 2 ** 2;
-  num = num + 3;
-  num = num % 4;
-  num = num * 14;
-  console.log(num);
+function printName(userName) { // accepts one parameter
+  console.log(userName); //print the name to the console using
+  return userName; //returning the value
 }
-myNumberFunction();
-
-console.log(console.log);

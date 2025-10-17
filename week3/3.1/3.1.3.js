@@ -14,13 +14,14 @@ console.log(myNumberFunction()); // we are printing the returned value
 function exampleEarlyReturnFunction() {
   // Check for a condition to be met and stop the execution of the function
   //   This condition is normally checking for invalid data or an error condition
-  if (true) { // By checking for true this condition is always met
+  if (true) {
+    // By checking for true this condition is always met
     return "Zap! - Early Return!";
   }
   console.log(
     "This will never print because it is after the early return statement."
   );
-  return "We made it to the end!"
+  return "We made it to the end!";
 }
 
 // ? will the following function early return?
