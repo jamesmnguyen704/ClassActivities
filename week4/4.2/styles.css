@@ -1,0 +1,32 @@
+body {
+  background-color: #BC8DA0;
+}
+
+.nav-bar {
+  background-color: #A04668;
+  padding: 1em;
+  color: #D9D0DE;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+nav > ul > li {
+  border: solid 1px;
+  padding: .33em;
+  display: inline-block;
+}
+
+footer {
+  padding: .5em;
+  background-color: #ADA8B6;
+}
+
+/* Image properties */
+img {
+  width: 300px; /* Fixed width = 300px */
+  height: 300px; /* Fixed height = 300px */
+  object-fit cover; /* Ensures image covers the area without distortion */
+  margin: 10px; /* Space around images */
+  align-items: center; /* Center alignment for flex items */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+}

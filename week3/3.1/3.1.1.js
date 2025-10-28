@@ -20,3 +20,8 @@ function checkDrivingAge() {
     console.log(false);
   }
 }
+
+greet();
+function greet() {
+  console.log("Hello!");
+}

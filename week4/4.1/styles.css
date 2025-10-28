@@ -1,0 +1,80 @@
+/* Make all images the same size */
+img {
+  width: 300px; /* Fixed width = 300px */
+  height: 300px; /* Fixed height = 300px */
+  object-fit: cover; /* Ensures image covers the area without distortion */
+  border-radius: 10px; /* Rounded corners for better aesthetics */
+  margin: 10px; /* Space around images */
+  align-items: center; /* Center alignment for flex items */
+}
+
+/* Basic styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #414243;
+  color: #e1e7ec;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 32px;
+}
+
+h3 {
+  text-align: center;
+  color: #e2f38a;
+  font-size: 28px;
+}
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Skills List Styling */
+.skills-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 20px 0; /* Add space above and below */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  cursor: pointer;
+
+}.skills-list:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker on hover */
+}
+.skills-list li {
+  background-color: #3498db; /* Blue background for each skill */
+  color: white; /* White text */
+  padding: 12px 20px; /* Inner spacing */
+  margin: 8px 0; /* Space between items */
+  border-radius: 6px; /* Rounded corners */
+  border-left: 4px solid #2980b9; /* Left accent border */
+  transition: all 0.3s ease; /* Smooth hover animation */
+  font-weight: 500; /* Slightly bold text */
+}
+
+.contact-class li {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 20px; /* Inner spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px; /* Space above the contact section */
+}

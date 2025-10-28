@@ -1,0 +1,7 @@
+img {
+  max-width: 300px; /* Fixed width by 300 px */
+  border-radius: 20px;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
