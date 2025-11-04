@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SavvyCoders Javascript BootCamp</title>
+    <title>Super Saiyan BootCamp</title>
+    <style>
+      h1 {
+        font-size: 3rem; /* Makes title much bigger */
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -21,56 +26,54 @@
   </head>
   <body>
     <header>
-      <h1>SavvyCoders Javascript BootCamp</h1>
-      <a
-        id="heroButton"
-        href=""
-        onClick="alert('Hello! You clicked the Button!')"
-        >"Call to Action Button"</a
-      >
+      <h1>Super Saiyan BootCamp</h1>
+      <a id="heroButton" href="" onclick="giveSensuBean(event)">
+        "Give Me a Sensu Bean"
+      </a>
     </header>
 
     <nav>
-      <i class="fas fa-bars"></i>
-      <ul class="hidden--mobile nav-links">
+      <i class="fas fa-bars" onclick="toggleMenu()"></i>
+      <ul class="hidden--mobile nav-links" id="navMenu">
         <li><a href="">Home</a></li>
         <li><a href="#form">Contact</a></li>
-        <li><a href="https://github.com/" target="blank">GitHub</a></li>
+        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
         <li>
-          <a href="https://developer.mozilla.org/en-US/" target="blank">MDN</a>
+          <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
         </li>
       </ul>
     </nav>
 
     <content class="responsive flex">
-      <div id="block1">
-        FIRST: Quisque lacinia lorem nec mauris sollicitudin
-      </div>
-      <div id="block2">2 Aliquam sodales felis sit amet</div>
-      <div id="block3">3 Aliquam vitae iaculis lorem, vitae</div>
-      <div id="block4">4 Sed non orci urna. Duis ac lectus</div>
-      <div id="block5">5 Morbi pharetra ipsum a hendrerit</div>
-      <div id="block6">6 Nullam quis magna a sem bibendum</div>
-      <div id="block7">7 Curabitur feugiat est vel commodo</div>
-      <div id="block8">8 Vestibulum sed lobortis nisi, et</div>
-      <div id="block9">9 Integer gravida augue massa, et pharetra</div>
-      <div id="block10">10 Integer a consectetur ipsum. In a leo</div>
-      <div id="block11">11 Praesent in viverra mi. Curabitur urna</div>
-      <div id="block12">12 Aenean imperdiet nibh turpis</div>
-      <div id="block13">13 Donec ac pulvinar leo, nec</div>
-      <div id="block14">14 Sed a risus posuere, rutrum orci</div>
-      <div id="block15">15 Sed sollicitudin in eros non pulvinar</div>
-      <div id="block16">16 Nullam nisl ante, blandit vel</div>
-      <div id="block17">LAST: posuere justo vitae urna</div>
+      <div id="block1">1 FIRST: Train with Master Roshi</div>
+      <div id="block2">2 Fight at the world tournament</div>
+      <div id="block3">3 Defend Earth from Saiyan invasion</div>
+      <div id="block4">4 Travel to Namek</div>
+      <div id="block5">5 Transform to Super Saiyan</div>
+      <div id="block6">6 Face android and Cell</div>
+      <div id="block7">7 Train in hyperbolic cell</div>
+      <div id="block8">8 Gohan levels up to Super Saiyan 2</div>
+      <div id="block9">9 Finally Learn the Spirit Bomb</div>
+      <div id="block10">10 Goten becomes the GOAT</div>
+      <div id="block11">11 Majin Buu arrives</div>
+      <div id="block12">12 Fuse with Vegeta</div>
+      <div id="block13">13 Balance from Whis and Kai</div>
+      <div id="block14">14 Awaken Ultra Instinct transcendent power</div>
+      <div id="block15">15 Protect multiverse in Tournament Power</div>
+      <div id="block17">LAST: Become universe's greatest warrior!</div>
     </content>
 
     <form id="form" action="" method="POST">
-      <label for="name">Name:</label>
+      <h2 style="text-align: center; color: #7000cc; margin-top: 0;">
+        Join the Z-Fighters!
+      </h2>
+
+      <label for="name">Warrior Name:</label>
       <input
         type="text"
         name="name"
         id="name"
-        placeholder="Full Name"
+        placeholder="Enter your name"
         required
       />
 
@@ -79,19 +82,27 @@
         type="email"
         name="email"
         id="email"
-        placeholder="you@somewhere.com"
+        placeholder="you@capsulecorp.com"
       />
 
-      <label for="fone">Phone:</label>
-      <input type="tel" name="fone" id="fone" placeholder="555-555-5555" />
+      <label for="fone">Scouter Frequency:</label>
+      <input type="tel" name="fone" id="fone" placeholder="555-KAMEHAMEHA" />
 
       <div>
-        <label for="msg">Enter your message:</label>
-        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <label for="msg">Your Message to Master Roshi:</label>
+        <textarea
+          name="msg"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Tell us about your training goals..."
+        ></textarea>
       </div>
 
       <div>
-        <p>What's this message about?</p>
+        <p style="font-weight: bold; color: #7000cc;">
+          What's this message about?
+        </p>
         <div>
           <input
             type="radio"
@@ -100,44 +111,45 @@
             id="pro"
             checked
           />
-          <label for="pro">I'd like to hire you!</label>
+          <label for="pro">I want to join your dojo!</label>
         </div>
         <div>
           <input type="radio" name="subject" value="personal" id="personal" />
-          <label for="personal">Personal message</label>
+          <label for="personal">Personal training request</label>
         </div>
         <div>
           <input type="radio" name="subject" value="other" />
-          <label>Don't know/something else</label>
+          <label>Challenge to a sparring match</label>
         </div>
       </div>
 
       <input type="checkbox" name="optIn" value="trusting" id="news" checked />
-      <label for="news">Subscribe me to your newsletter!</label>
+      <label for="news">Send me Z-Fighter newsletters!</label>
 
       <div>
-        <label for="marketing">How did you hear about me?</label>
+        <label for="marketing">How did you hear about us?</label>
         <select name="marketing" id="marketing">
-          <optgroup label="Online">
-            <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
-            <option value="github">Online Portfolio (GitHub)</option>
-            <option value="search">Search Engine</option>
-            <option value="email">Email</option>
+          <optgroup label="Digital Scouter">
+            <option value="social">Social Media (Capsule Corp Network)</option>
+            <option value="github">Online Training Portal</option>
+            <option value="search">Dragon Radar Search</option>
+            <option value="email">Senzu Bean Email</option>
           </optgroup>
           <optgroup label="In-Person">
-            <option value="networking">We met at a networking event</option>
-            <option value="referral">Personal referral</option>
-            <option value="random">We met somewhere else</option>
+            <option value="networking">Met at World Tournament</option>
+            <option value="referral">Referred by another Z-Fighter</option>
+            <option value="random">Random encounter</option>
           </optgroup>
-          <option value="other">Other</option>
+          <option value="other">Other dimension</option>
         </select>
       </div>
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Power Up & Submit!" />
     </form>
 
     <footer>
-      &copy; 2022 <a href="https://savvycoders.com/">Savvy Coders</a>
+      &copy; 2025 <a href="https://savvycoders.com/">Savvy Coders</a> |
+      Powered by Capsule Corp Technology 🚀
     </footer>
 
     <script src="index.js"></script>

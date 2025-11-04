@@ -1,0 +1,30 @@
+body {
+  background: radial-gradient(circle at top, #2b0000, #000)
+  color: #f5f5f5;
+  font-family: `Garmond`, `Time New Roman`, serif;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+
+
+
+.send-raven {
+  background: linear-gradient(135deg, #550000, #aa0000);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-raven:hover {
+  background: linear-gradient(135deg, #aa0000, #ff3333);
+  transform: translateY(-2px);
+}
+
+
+

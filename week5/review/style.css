@@ -1,0 +1,42 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, nav, main, aside, footer {
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+.grid-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+    .item {
+      border: 1px solid red;
+      padding: 10px;
+    }
+    #apple {
+      grid-row-start: 1;
+      grid-column-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    body{
+      display: grid;
+      grid-template-areas:
+      "header nav"
+      "sidebar main"
+      "sidebar footer"
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 2fr 5fr 1fr;
+    }
+    header {
+        grid-area: header;
+         }
+    nav {
+      grid-area: nav;
+    }
+    #sidebar {
+      grid-area sidebar;
+    }

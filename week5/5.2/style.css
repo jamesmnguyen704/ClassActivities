@@ -13,6 +13,7 @@ body > form {
 /*  This styling sets up the flex container */
 .flex {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -24,18 +25,67 @@ body > form {
 
 /* Activity 5.2.1: Media queries
   -Add CSS that removes the border around the flex items */
-
+@media print {
+  .flex > * {
+    border: none;
+    background: grey;
+  }
+}
 
 /* Activity 5.2.2: Media queries
   -Add CSS for when screen size is less than 700px */
-
+@media screen and (max-width: 700px) {
+  .flex {
+    flex-direction: column;
+  }
+}
 
 /* Activity 5.2.3: Media queries
   -Add CSS that checks for device hover capabilities */
-
+/* @media (hover: hover){
+  * :hover {
+    color: red;
+  }
+} */
 
 @media (min-width: 2000px) {
   * {
     color:orange;
   }
+}
+/* GRID CSS ACTIVITY */
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 50px 100px;
+  grid-template-rows: 50px 50px 50px;
+}
+
+.item1{
+  background-color: darkseagreen;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item2{
+  background-color: gold
+}
+
+.item3{
+  background-color: aqua;
+  grid-row-start: 2;
+  grid-row-end: 4
+}
+
+.item4{
+  background-color: blueviolet;
+  grid-column-start: 2;
+  grid-column-end: 4
+}
+
+.item5{
+  background-color: aquamarine
+}
+
+.item6{
+  background-color: chocolate
 }

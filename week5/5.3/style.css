@@ -1,21 +1,28 @@
+
+
 header {
-  background: url(https://images.unsplash.com/photo-1528334713982-2d1fe11a157a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url(image/Goku.png) center center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 40vh; /* Ensure header has minimum height */
 }
 
 h1 {
   color: white;
   text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 4rem;
+  font-weight: 900;
 }
 
 header > a {
   text-decoration: none;
   background-color: white;
-  font-size: 1.5em;
+  font-size: 2.0em;
   padding: 1.5rem;
   border-radius: 10px;
 }
@@ -71,7 +78,7 @@ body > form {
 
 @media (min-width: 550px){
   header {
-    height: 60vh;
+    height: 40vh;
   }
 
   nav > ul {
@@ -94,7 +101,35 @@ body > form {
 }
 
 @media (max-width: 550px) {
-  * {
-	flex-direction: column;
+  .flex {
+    flex-direction: column;
   }
+  
+  h1 {
+    font-size: 3rem; /* Slightly smaller on mobile for better fit */
+  }
+}
+
+
+content.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: radial-gradient(circle, #0f0f0f, #000);
+  color: #fefefe;
+  font-family: 'Saiyan Sans', sans-serif;
+}
+
+content.flex div {
+  padding: 1rem;
+  border-left: 4px solid gold;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+content.flex div:hover {
+  transform: scale(1.05);
+  background: rgba(255, 215, 0, 0.3);
 }

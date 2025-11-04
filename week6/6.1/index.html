@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Savvy Coders Aug. 2020 Cohort</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Your name in the Realm</h1>
+    </header>
+
+    <content>
+<main class="got-houses">
+  <div class="house stark">
+    <h2>House Stark</h2>
+    <p>“Winter is Coming”</p>
+  </div>
+
+  <div class="house lannister">
+    <h2>House Lannister</h2>
+    <p>“Hear Me Roar”</p>
+  </div>
+
+  <div class="house targaryen">
+    <h2>House Targaryen</h2>
+    <p>“Fire and Blood”</p>
+  </div>
+
+  <div class="house baratheon">
+    <h2>House Baratheon</h2>
+    <p>“Ours is the Fury”</p>
+  </div>
+
+  <div class="house greyjoy">
+    <h2>House Greyjoy</h2>
+    <p>“We Do Not Sow”</p>
+  </div>
+
+  <div class="house tyrell">
+    <h2>House Tyrell</h2>
+    <p>“Growing Strong”</p>
+  </div>
+
+  <div class="house martell">
+    <h2>House Martell</h2>
+    <p>“Unbowed, Unbent, Unbroken”</p>
+  </div>
+</main>
+
+<form action="" method="POST">
+  <div>
+    <label for="house">House:</label>
+    <input type="text" name="house" id="house" placeholder="Which House?" required />
+  </div>
+<!-- -->
+  <div>
+    <label for="weapon">Weapon of Choice:</label>
+    <input type="text" name="weapon" id="weapon" placeholder="Valyrian Steel" />
+  </div>
+
+  <div>
+    <p>Choose wisely:</p>
+    <div>
+      <input type="radio" name="choice" value="dragons" id="dragons" checked />
+      <label for="dragons">Join the Mother of Dragons</label>
+    </div>
+    <div>
+      <input type="radio" name="choice" value="kneel" id="kneel" />
+      <label for="kneel">Bend the Knee</label>
+    </div>
+    <div>
+      <input type="radio" name="choice" value="wall" id="wall" />
+      <label for="wall">Banished to the Wall</label>
+    </div>
+  </div>
+
+  <div>
+    <input type="checkbox" name="allegiance" value="sworn" id="allegiance" checked />
+    <label for="allegiance">Swear your allegiance</label>
+  </div>
+
+  <button type="submit" class="send-raven">Send Raven 🕊️</button>
+
+</form>
+
+<section>
+  <ul id="form-output"></ul>
+</section>
+
+<footer>
+  &copy; 2025 <a href="https://savvycoders.com/">House of Dragons</a>
+</footer>
+
+<!-- Activity 4 - Form Handling -->
+<script src="./index.js"></script>
+
+  </body>
+</html>
